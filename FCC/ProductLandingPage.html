@@ -1,0 +1,81 @@
+<!-- 9-10-19 -->
+
+<!DOCTYPE html>
+<html>
+<style>
+  #nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  @media (max-width: 500px) {
+    :root {
+      background-color: blue;
+    }
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+</style>
+<header id="header">
+  <br>
+  <h1 id="title">Wood</h1>
+  <br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/16_wood_samples.jpg/525px-16_wood_samples.jpg"
+  id="header-img"
+  alt="Image of Wood"
+  height="200px"
+  width="150px">
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="#cherry-img" class="nav-link">Cherry</a></li>
+      <li><a href="#walnut-img" class="nav-link">Walnut</a></li>
+      <li><a href="#oak-img" class="nav-link">Oak</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div id="video-div">
+    <iframe width="420" height="315" id="video"
+      src="https://youtube.com/embed/y7gLvEYoBu0">
+    </iframe>
+  </div>
+  <div class="flex-box">
+    <div>
+      Cherry<br>
+      <img src="https://images.homedepot-static.com/productImages/3b75bd31-3927-43ea-87bd-7f13c897cf53/svn/home-decorators-collection-bathroom-vanity-samples-da001-64_1000.jpg"
+      alt="Cherry Wood"
+      height="100px"
+      width="100px"
+      id="cherry-img">
+      <br>
+    </div>
+    <div>
+      Walnut<br>
+      <img src="https://www.viesso.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/w/a/walnut-wood-sample-base-3_4.jpg"
+      alt="Walnut Wood"
+      height="100px"
+      width="100px"
+      id="walnut-img">
+      <br>
+    </div>
+    <div>
+      Oak<br>
+      <img src="https://images.homedepot-static.com/productImages/90787f83-4de8-49ca-b84e-44240b664590/svn/patching-repair-8101090-64_1000.jpg"
+      alt="Oak Wood"
+      height="100px"
+      width="100px"
+      id="oak-img">
+      <br>
+    </div>
+  </div>
+  <p>Sign up for our mailing list:</p>
+  <br>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" name="email" value="Email" placeholder="Enter your Email" id="email" required>
+    <input type="submit" name="submit" value="Submit" id="submit">
+  </form>
+</main>
+</html>
