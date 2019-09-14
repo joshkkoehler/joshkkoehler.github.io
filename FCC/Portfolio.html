@@ -1,0 +1,67 @@
+<!-- 9-13-19 -->
+
+<!DOCTYPE html>
+<html>
+<style>
+  #main {
+    text-align: center;
+    background-color: Teal;
+    margin-top: 30px
+  }
+  .project-tile {
+    height: 550px;
+    width: 50%;
+    overflow: hidden;
+  }
+  #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: orange;
+    text-align: right;
+    right: 10%
+  }
+  .navlink {
+    font-size: 20pt;
+  }
+  #welcome-section {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    #main: {
+      background: purple;
+    }
+  }
+</style>
+<main id="main">
+  <section id="welcome-section">
+    <h1>My name is Josh and I am a Web Developer</h1>
+  </section>
+  <section id="projects">
+    <h2>These are some of my projects</h2>
+    <a href="https://joshkkoehler.github.io/FCC/TributePage" target="_blank">
+      <iframe src="https://joshkkoehler.github.io/FCC/TributePage"
+        class="project-tile">
+      </iframe>
+    </a>
+    <a href="https://joshkkoehler.github.io/FCC/TechnicalDocumentation" target="_blank">
+      <iframe src="https://joshkkoehler.github.io/FCC/TechnicalDocumentation"
+        class="project-tile">
+      </iframe>
+    </a>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <a href="https://github.com/joshkkoehler" id="profile-link" target="_blank">Github</a>
+  </section>
+</main>
+  <nav id="navbar">
+    <a href="#welcome-section" class="navlink">About</a>
+    <a href="#projects" class="navlink">Work</a>
+    <a href="#contact" class="navlink">Contact</a>
+  </nav>
+</html>
